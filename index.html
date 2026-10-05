@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Английский в компании</title>
+
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="header-wrapper">
+        <div class="header-info">
+          <h1>
+            Английский<br />в компании
+            <span class="span-first"
+              >за <span class="span-second">280 ₽</span> / занятие</span
+            >
+          </h1>
+          <p>Прокачай свой английский! Подберём программу для любого уровня.</p>
+          <button id="openModal" class="btn-sign">Записаться</button>
+        </div>
+
+        <img src="assets/images/Картинка на хедер.svg" class="header-img" />
+      </div>
+    </header>
+
+    <main class="main">
+      <article>
+        <h2>Подобрать группу</h2>
+        <section class="filter">
+          <p><span>Уровень</span></p>
+          <div class="dropdown" id="dropdown">
+            <button type="button" class="dropdown-btn">Все уровни</button>
+            <ul class="dropdown-list">
+              <li data-level="all" class="selected">Все уровни</li>
+              <li data-level="beginner">Beginner</li>
+              <li data-level="elementary">Elementary</li>
+              <li data-level="pre-intermediate">Pre-intermediate</li>
+              <li data-level="intermediate">Intermediate</li>
+              <li data-level="upper-intermediate">Upper-Intermediate</li>
+              <li data-level="advanced">Advanced</li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="schedule">
+          <div class="schedule-time">09:30 — 11:00</div>
+          <div class="card-grid">
+            <div class="card" data-level="pre-intermediate">
+              <h4>Pre-intermediate</h4>
+              <span class="status">Идет набор в группу</span>
+              <ul>
+                <li>Пн, 09:30-10:30</li>
+                <li>Ср, 09:30-10:30</li>
+              </ul>
+            </div>
+            <div class="card" data-level="intermediate">
+              <h4>Intermediate</h4>
+              <span class="status">Встать в очередь</span>
+              <ul>
+                <li>Пн, 10:00-11:00</li>
+                <li>Ср, 10:00-11:00</li>
+              </ul>
+            </div>
+            <div class="card" data-level="pre-intermediate">
+              <h4>Pre-intermediate</h4>
+              <span class="status">Встать в очередь</span>
+              <ul>
+                <li>Пн, 10:45-11:45</li>
+                <li>Ср, 10:45-11:45</li>
+              </ul>
+            </div>
+            <div class="card" data-level="intermediate">
+              <h4>Intermediate</h4>
+              <span class="status">Встать в очередь</span>
+              <ul>
+                <li>Пн, 11:00-12:00</li>
+                <li>Чт, 10:00-11:00</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </article>
+    </main>
+
+    <footer>
+      <p>© 2003-2024 Тензор, СБИС</p>
+    </footer>
+
+    <div class="modal" id="modal">
+      <div class="modal-box">
+        <button class="modal-close" id="closeModal">&times;</button>
+        <h3>Записаться на занятия</h3>
+        <form id="leadForm">
+          <input type="text" placeholder="как к вам обращаться" required />
+          <input type="tel" placeholder="номер телефона" required />
+          <input type="email" placeholder="электронная почта" required />
+          <button type="submit" class="btn-gray">Отправить</button>
+        </form>
+      </div>
+    </div>
+
+    <script src="js/index.js"></script>
+  </body>
+</html>
